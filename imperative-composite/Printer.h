@@ -2,6 +2,8 @@
 
 #include "Data.h"
 
+#include <iostream>
+
 class DataPrinter : public DataVisitor
 {
 public:

@@ -1,4 +1,7 @@
 #include "Data.h"
+#include "Printer.h"
+
+#include <gtest/gtest.h>
 
 TEST(main, main)
 {
