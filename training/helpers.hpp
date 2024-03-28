@@ -28,9 +28,14 @@ inline void operator delete[](void* ptr, std::size_t count)
 
 struct Int
 {
+    Int() = default;
+
     Int(int i)
         : value(i)
     {}
+
+    Int(const Int&) = default;
+    Int(Int&&) = default;
 
     operator int&()
     {

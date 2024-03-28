@@ -96,7 +96,10 @@ TEMPLATE_TEST_CASE("Modifiers / emplace_back", "", std::vector<Elem>)
 
     {
         auto vec = TestType();
-        vec.emplace_back(1);
+        std::cout << "push_back()" << std::endl;
+        vec.push_back(Elem(1));
+        std::cout << "resize()" << std::endl;
+        vec.resize(2);
     }
 
     stop_logging_memory();
